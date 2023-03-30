@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"></meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <title>Document</title>
+    <script src="https://cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <button id ="insert">插入图谱数据</button>
+    <button id="select">查找工程图谱内org</button>
+    <button id="user">用户注册</button>
+     <button id="pass">查询此用户的密码</button>
+    <button id="SelectOneNode">以名字查询此节点与其包含关系与对应节点</button>
+    <button id="SelectOnePro">直接从Neo4j查找工程内容</button>
+    <button id="SelectOneRel">查找指定关系内容</button>
+    <button id="SelectOneTypeAndRel">查找指定类别的节点与其关系(有其他节点)</button>
+    <button id="SelectOneTypeNoRel">查找指定类别的节点与其关系(无其他节点)</button>
+    <button id="InsertOneNode">插入单个节点</button>
+    <button id="InsertOneRel">创建单个关系</button>
+    <button id="SelectOneClourAndRel">查找某一颜色节点(包含所有与其相关节点)</button>
+    <button id="SelectOneClourNoRel">查找某一颜色节点(不包含其它不同颜色节点)</button>
+    <script>
+        $(function(){
+            $('#insert').on('click',function()
+            {
+                $.ajax({
+                    type:"POST",
+                    url:'http://127.0.0.1:8000/InsertPic/',
+                    data:{
+                        username:"哈哈哈",
+                        pro:"pro11",
+                        data:'{"container":{"height":1100,"width":2000},"blocks":[{"top":170,"left":280,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":70,"text":"贾宝玉","type":"","classes":"Person"}},{"top":48,"left":296,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"晴雯","classes":"Person"}},{"top":63,"left":200,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"袭人","type":"","classes":"Person"}},{"top":152,"left":144,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":70,"text":"薛宝钗","type":"primary","classes":"Person"}},{"top":90,"left":385,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"秋纹","type":"","classes":"Person"}},{"top":259,"left":190,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"麝月","type":"","classes":"Person"}},{"top":170,"left":527,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":70,"text":"贾探春","type":"","classes":"Person"}},{"top":63,"left":470,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"侍书","type":"","classes":"Person"}},{"top":48,"left":594,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"翠墨","type":"","classes":"Person"}},{"top":152,"left":665,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"小婵","type":"","classes":"Person"}},{"top":312,"left":447,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":80,"text":"贾政","type":"","classes":"Person"}},{"top":312,"left":287,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":70,"text":"贾环","type":"","classes":"Person"}},{"top":567,"left":454,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":70,"text":"贾珠","type":"","classes":"Person"}},{"top":440,"left":200,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":70,"text":"贾元春","type":"","classes":"Person"}},{"top":386,"left":64,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"琴韵","type":"","classes":"Person"}},{"top":515,"left":64,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"抱琴","type":"","classes":"Null"}},{"top":583,"left":167,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"青芸","type":"","classes":"Person"}},{"top":471,"left":330,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":80,"text":"王夫人","type":"","classes":"Person"}},{"top":676,"left":385,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":70,"text":"李纨","type":"","classes":"Null"}},{"top":682,"left":527,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"贾兰","type":"","classes":"Person"}},{"top":480,"left":565,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":70,"text":"赵姨娘","type":"","classes":"Person"}},{"top":265,"left":607,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":70,"text":"周姨娘","type":"","classes":"Person"}},{"top":440,"left":728,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":90,"text":"贾代善","type":"","classes":"Person"}},{"top":243,"left":735,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":90,"text":"史太君","type":""}},{"top":327,"left":890,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":80,"text":"贾敏","type":"","classes":"Person"}},{"top":273,"left":1045,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":80,"text":"林如海","type":"","classes":"Person"}},{"top":185,"left":932,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":70,"text":"林黛玉","type":"","classes":"Null"}},{"top":90,"left":829,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"紫鹃","type":"","classes":"Person"}},{"top":48,"left":941,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"雪雁","type":"","classes":"Person"}},{"top":99,"left":1045,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"春纤","type":"","classes":"Person"}},{"top":480,"left":900,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":100,"text":"贾源","type":"","classes":"Person"}},{"top":647,"left":745,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":80,"text":"贾赦","type":"","classes":"Person"}},{"top":613,"left":890,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":70,"text":"贾琮","type":"","classes":"Person"}},{"top":583,"left":600,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":80,"text":"邢夫人","type":"","classes":"Person"}},{"top":812,"left":687,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":70,"text":"贾琏","type":""}},{"top":756,"left":565,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"秋桐","type":"","classes":"Person"}},{"top":855,"left":543,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"贾巧姐","type":"","classes":"Person"}},{"top":957,"left":749,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"尤二姐","type":"","classes":"Person"}},{"top":872,"left":808,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"平儿","type":""}},{"top":947,"left":623,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":70,"text":"王熙凤","type":"","classes":"Person"}},{"top":448,"left":1077,"componentKey":"dgnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":110,"text":"贾家","type":"","classes":"Organization"}},{"top":750,"left":900,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":70,"text":"贾迎春","type":"","classes":"Person"}},{"top":682,"left":1026,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"莲花儿","type":"","classes":"Person"}},{"top":807,"left":1045,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"司棋","type":"","classes":"Person"}},{"top":877,"left":957,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"绣橘","type":"","classes":"Person"}},{"top":375,"left":1237,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":100,"text":"贾演","type":"","classes":"Person"}},{"top":480,"left":1367,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":90,"text":"贾代化","type":"","classes":"Person"}},{"top":595,"left":1263,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":80,"text":"贾敷","type":"","classes":"Person"}},{"top":448,"left":1531,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":80,"text":"贾敬","type":"","classes":"Person"}},{"top":295,"left":1572,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":70,"text":"贾惜春","type":"","classes":"Person"}},{"top":220,"left":1468,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"彩屏"}},{"top":170,"left":1583,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"入画","type":"","classes":"Person"}},{"top":232,"left":1683,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"彩儿","type":"","classes":"Person"}},{"top":628,"left":1548,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":70,"text":"贾珍","type":"","classes":"Person"}},{"top":682,"left":1409,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"贾蔷","type":""}},{"top":762,"left":1548,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":70,"text":"尤氏","type":"","classes":"Person"}},{"top":619,"left":1746,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":70,"text":"贾蓉","type":"","classes":"Person"}},{"top":503,"left":1814,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":70,"text":"秦可卿","type":"","classes":"Event"}},{"top":619,"left":1894,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"瑞珠","type":"","classes":"Person"}},{"top":732,"left":1840,"componentKey":"node","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":60,"text":"宝珠","type":"","classes":"Person"}},{"top":812,"left":1263,"componentKey":"impnode","adjustPosition":false,"focus":false,"zIndex":3,"hasResize":false,"props":{"size":80,"text":"刘润根","type":"success","classes":"Person"}}],"arrows":[{"num_start":0,"num_end":4,"text":"丫鬟"},{"num_start":0,"num_end":1,"text":"丫鬟"},{"num_start":0,"num_end":2,"text":"丫鬟"},{"num_start":0,"num_end":3,"text":"夫妻"},{"num_start":0,"num_end":5,"text":"丫鬟"},{"num_start":6,"num_end":7,"text":"丫鬟"},{"num_start":6,"num_end":8,"text":"丫鬟"},{"num_start":6,"num_end":9,"text":"丫鬟"},{"num_start":10,"num_end":6,"text":"子女"},{"num_start":10,"num_end":0,"text":"子女"},{"num_start":10,"num_end":11,"text":"子女"},{"num_start":10,"num_end":12,"text":"子女"},{"num_start":10,"num_end":13,"text":"子女"},{"num_start":13,"num_end":14,"text":"丫鬟"},{"num_start":13,"num_end":15,"text":"丫鬟"},{"num_start":13,"num_end":16,"text":"丫鬟"},{"num_start":10,"num_end":17,"text":"夫妻"},{"num_start":12,"num_end":18,"text":"夫妻"},{"num_start":12,"num_end":19,"text":"子女"},{"num_start":10,"num_end":20,"text":"小妾"},{"num_start":10,"num_end":21,"text":"小妾"},{"num_start":22,"num_end":10,"text":"关系"},{"num_start":22,"num_end":23,"text":"夫妻"},{"num_start":22,"num_end":24,"text":"子女"},{"num_start":24,"num_end":25,"text":"关系"},{"num_start":24,"num_end":26,"text":"子女"},{"num_start":26,"num_end":27,"text":"丫鬟"},{"num_start":26,"num_end":28,"text":"丫鬟"},{"num_start":26,"num_end":29,"text":"丫鬟"},{"num_start":30,"num_end":22,"text":"子女"},{"num_start":22,"num_end":31,"text":"子女"},{"num_start":31,"num_end":33,"text":"夫妻"},{"num_start":31,"num_end":32,"text":"子女"},{"num_start":31,"num_end":34,"text":"子女"},{"num_start":34,"num_end":35,"text":"小妾"},{"num_start":34,"num_end":38,"text":"小妾"},{"num_start":34,"num_end":39,"text":"夫妻"},{"num_start":34,"num_end":37,"text":"小妾"},{"num_start":34,"num_end":36,"text":"子女"},{"num_start":40,"num_end":30,"text":"继承"},{"num_start":31,"num_end":41,"text":"子女"},{"num_start":41,"num_end":42,"text":"丫鬟"},{"num_start":41,"num_end":43,"text":"丫鬟"},{"num_start":41,"num_end":44,"text":"丫鬟"},{"num_start":40,"num_end":45,"text":"继承"},{"num_start":45,"num_end":46,"text":"子女"},{"num_start":46,"num_end":47,"text":"子女"},{"num_start":46,"num_end":48,"text":"子女"},{"num_start":48,"num_end":49,"text":"子女"},{"num_start":49,"num_end":50,"text":"丫鬟"},{"num_start":49,"num_end":51,"text":"丫鬟"},{"num_start":49,"num_end":52,"text":"丫鬟"},{"num_start":48,"num_end":53,"text":"子女"},{"num_start":53,"num_end":54,"text":"子女"},{"num_start":53,"num_end":55,"text":"夫妻"},{"num_start":53,"num_end":56,"text":"子女"},{"num_start":56,"num_end":57,"text":"夫妻"},{"num_start":56,"num_end":58,"text":"丫鬟"},{"num_start":56,"num_end":59,"text":"丫鬟"}]}'
+                    },
+                    success: function(res)
+                    {
+                        console.log(res)
+                    }
+                 })
+            })
+            $('#select').on('click',function()
+            {
+                $.ajax({
+                    type:"POST",
+                    url:'http://127.0.0.1:8000/SelectPic/',
+                    data:{
+                            username:"哈哈哈",
+                            pro:"pro11"
+                    },
+                    success: function(res)
+                    {
+                        console.log(res)
+                    }
+
+                })
+            })
+            $('#user').on('click',function()
+            {
+                $.ajax({
+                    type:"POST",
+                    url:'http://127.0.0.1:8000/InsertUser/',
+                    data:{
+                            username:"ABCCCDD",
+                            password:"12345645ADV"
+                    },
+                    success: function(res)
+                    {
+                        console.log(res)
+                    }
+
+                })
+            })
+            $('#pass').on('click',function()
+            {
+                $.ajax({
+                    type:"POST",
+                    url:'http://127.0.0.1:8000/SelectPass/',
+                    data:{
+                            username:"ABCCCDD",
+                    },
+                    success: function(res)
+                    {
+                        console.log(res)
+                    }
+
+                })
+            })
+            $('#SelectOneNode').on('click',function()
+            {
+                $.ajax({
+                    type:"POST",
+                    url:'http://127.0.0.1:8000/SelectOneNodeByName/',
+                    data:{
+                        username:"哈哈哈",
+                        pro:"pro11",
+                        nodename:"贾宝玉"                    },
+                    success: function(res)
+                    {
+                        console.log(res)
+                    }
+                 })
+            })
+             $('#SelectOnePro').on('click',function()
+            {
+                $.ajax({
+                    type:"POST",
+                    url:'http://127.0.0.1:8000/SelectOnePro/',
+                    data:{
+                        username:"哈哈哈",
+                        pro:"pro11",                  },
+                    success: function(res)
+                    {
+                        console.log(res)
+                    }
+                 })
+            })
+            $('#SelectOneRel').on('click',function()
+            {
+                $.ajax({
+                    type:"POST",
+                    url:'http://127.0.0.1:8000/SelectOneRel/',
+                    data:{
+                        username:"哈哈哈",
+                        pro:"pro11",
+                        relname:'继承'                  },
+                    success: function(res)
+                    {
+                        console.log(res)
+                    }
+                 })
+            })
+            $('#SelectOneTypeAndRel').on('click',function()
+            {
+                $.ajax({
+                    type:"POST",
+                    url:'http://127.0.0.1:8000/SelectOneTypeAndRel/',
+                    data:{
+                        username:"哈哈哈",
+                        pro:"pro11",
+                        typename:'Person'                  },
+                    success: function(res)
+                    {
+                        console.log(res)
+                    }
+                 })
+            })
+            $('#SelectOneTypeNoRel').on('click',function()
+            {
+                $.ajax({
+                    type:"POST",
+                    url:'http://127.0.0.1:8000/SelectOneTypeNoRel/',
+                    data:{
+                        username:"哈哈哈",
+                        pro:"pro11",
+                        typename:'Person'                  },
+                    success: function(res)
+                    {
+                        console.log(res)
+                    }
+                 })
+            })
+            $('#InsertOneNode').on('click',function()
+            {
+                $.ajax({
+                    type:"POST",
+                    url:'http://127.0.0.1:8000/InsertOneNode/',
+                    data:{
+                        username:"哈哈哈",
+                        pro:"pro11",
+                        block:'{"hasResize":false,"adjustPosition":false,"top":605,"left":1024,"focus":false,"componentKey":"dgnode","zIndex":3,"props":{"size":110,"classes":"Organization","text":"刘润根真的是个大帅哥","type":""}}'                 },
+                    success: function(res)
+                    {
+                        console.log(res)
+                    }
+                 })
+            })
+            $('#InsertOneRel').on('click',function()
+            {
+                $.ajax({
+                    type:"POST",
+                    url:'http://127.0.0.1:8000/InsertOneRel/',
+                    data:{
+                        username:"哈哈哈",
+                        pro:"pro11",
+                        firnode:'贾宝玉',
+                        secnode:"林黛玉",
+                        relname:"同事"                     },
+                    success: function(res)
+                    {
+                        console.log(res)
+                    }
+                 })
+            })
+            $('#SelectOneClourAndRel').on('click',function()
+            {
+                $.ajax({
+                    type:"POST",
+                    url:'http://127.0.0.1:8000/SelectOneClourAndRel/',
+                    data:{
+                        username:"哈哈哈",
+                        pro:"pro11",
+                        clour:'impnode'                  },
+                    success: function(res)
+                    {
+                        console.log(res)
+                    }
+                 })
+            })
+            $('#SelectOneClourNoRel').on('click',function()
+            {
+                $.ajax({
+                    type:"POST",
+                    url:'http://127.0.0.1:8000/SelectOneClourNoRel/',
+                    data:{
+                        username:"哈哈哈",
+                        pro:"pro11",
+                        clour:'impnode'                    },
+                    success: function(res)
+                    {
+                        console.log(res)
+                    }
+                 })
+            })
+        })
+    </script>
+</body>
+</html>
