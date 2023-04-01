@@ -1,0 +1,454 @@
+{ 
+    "container": {
+        "height": 500,
+        "width": 800
+    },
+    "blocks": [
+        {
+            "top": 285,
+            "left": 179,
+            "componentKey": "node",
+            "adjustPosition": false,
+            "focus": false,
+            "zIndex": 4,
+            "width": 60,
+            "height": 60,
+            "hasResize": false,
+            "props": {
+                "size": 60,
+                "text": "邱子翱",
+                "type": "",
+                "classes": "Person",
+                "data": [
+                    {
+                        "key": "年龄",
+                        "value": "20岁"
+                    },
+                    {
+                        "key": "性别",
+                        "value": "男"
+                    },
+                    {
+                        "key": "学校",
+                        "value": "东北大学"
+                    },
+                    {
+                        "key": "学院",
+                        "value": "计算机科学与工程学院"
+                    },
+                    {
+                        "key": "住址",
+                        "value": "浑南校区五舍B103"
+                    },
+                    {
+                        "key": "家乡",
+                        "value": "辽宁省朝阳市"
+                    },
+                    {
+                        "key": "祖籍",
+                        "value": "辽宁省沈阳市"
+                    },
+                    {
+                        "key": "电话",
+                        "value": "15042846006"
+                    },
+                    {
+                        "key": "QQ号",
+                        "value": "980376887"
+                    },
+                    {
+                        "key": "身份",
+                        "value": "本科生"
+                    },
+                    {
+                        "key": "入学年份",
+                        "value": "2020年"
+                    },
+                    {
+                        "key": "班级",
+                        "value": "计算机2001班"
+                    }
+                ]
+            }
+        },
+        {
+            "top": 115.5,
+            "left": 436,
+            "componentKey": "node",
+            "adjustPosition": false,
+            "focus": false,
+            "zIndex": 3,
+            "width": 100,
+            "height": 100,
+            "hasResize": false,
+            "props": {
+                "size": 100,
+                "text": "东北大学",
+                "type": "info",
+                "classes": "Organization",
+                "data": [
+                    {
+                        "key": "位置",
+                        "value": "沈阳市"
+                    },
+                    {
+                        "key": "建校时间",
+                        "value": "1923年"
+                    },
+                    {
+                        "key": "英文简称",
+                        "value": "NEU"
+                    },
+                    {
+                        "key": "占地总面积",
+                        "value": "255万平方米"
+                    },
+                    {
+                        "key": "重点建设高校",
+                        "value": "985，211",
+                        "commnets": "12个未来技术学院建设高校"
+                    },
+                    {
+                        "key": "院校代码",
+                        "value": "10145"
+                    },
+                    {
+                        "key": "本科专业",
+                        "value": "76"
+                    },
+                    {
+                        "key": "学校类别",
+                        "value": "理工类"
+                    },
+                    {
+                        "key": "办学性质",
+                        "value": "公办高校"
+                    },
+                    {
+                        "key": "校训",
+                        "value": "自强不息，知行合一"
+                    },
+                    {
+                        "key": "校庆日",
+                        "value": "4月26日"
+                    },
+                    {
+                        "key": "知名校友",
+                        "value": "张学良、梁思成、林徽因等"
+                    }
+                ]
+            }
+        },
+        {
+            "top": 195.5,
+            "left": 172,
+            "componentKey": "node",
+            "adjustPosition": false,
+            "focus": false,
+            "zIndex": 4,
+            "width": 60,
+            "height": 60,
+            "hasResize": false,
+            "props": {
+                "size": 60,
+                "text": "郑皓文",
+                "type": "",
+                "classes": "Person",
+                "data": [
+                    {
+                        "key": "年龄",
+                        "value": "20岁"
+                    },
+                    {
+                        "key": "性别",
+                        "value": "男"
+                    },
+                    {
+                        "key": "学校",
+                        "value": "东北大学"
+                    },
+                    {
+                        "key": "学院",
+                        "value": "计算机科学与工程学院"
+                    },
+                    {
+                        "key": "住址",
+                        "value": "浑南校区五舍B103"
+                    },
+                    {
+                        "key": "家乡",
+                        "value": "辽宁省盘锦市"
+                    },
+                    {
+                        "key": "祖籍",
+                        "value": "辽宁省？？市"
+                    },
+                    {
+                        "key": "电话",
+                        "value": "15042846006"
+                    },
+                    {
+                        "key": "QQ号",
+                        "value": "980376887"
+                    },
+                    {
+                        "key": "身份",
+                        "value": "本科生"
+                    },
+                    {
+                        "key": "入学年份",
+                        "value": "2020年"
+                    },
+                    {
+                        "key": "班级",
+                        "value": "计算机2001班"
+                    }
+                ]
+            }
+        },
+        {
+            "top": 195.5,
+            "left": 301,
+            "componentKey": "impnode",
+            "adjustPosition": false,
+            "focus": false,
+            "zIndex": 3,
+            "width": 80,
+            "height": 80,
+            "hasResize": false,
+            "props": {
+                "size": 80,
+                "text": "计算机学院",
+                "type": "primary",
+                "classes": "Organization",
+                "data": [
+                    {
+                        "key": "创办时间",
+                        "value": "2015年"
+                    },
+                    {
+                        "key": "办学性质",
+                        "value": "二级学院"
+                    },
+                    {
+                        "key": "本科专业",
+                        "value": "4个"
+                    },
+                    {
+                        "key": "硕士点",
+                        "value": "学术学位授权一级学科2个"
+                    },
+                    {
+                        "key": "国家重点学科",
+                        "value": "二级学科1个"
+                    },
+                    {
+                        "key": "本科生",
+                        "value": "xxxx人"
+                    },
+                    {
+                        "key": "研究生",
+                        "value": "xxxx人"
+                    },
+                    {
+                        "key": "博士生",
+                        "value": "xxxx人"
+                    },
+                    {
+                        "key": "教职工",
+                        "value": "xxxx人"
+                    },
+                    {
+                        "key": "讲师",
+                        "value": "xxxx人"
+                    },
+                    {
+                        "key": "教授",
+                        "value": "xxxx人"
+                    },
+                    {
+                        "key": "副教授",
+                        "value": "xxxx人"
+                    }
+                ]
+            }
+        },
+        {
+            "top": 268,
+            "left": 407,
+            "componentKey": "impnode",
+            "adjustPosition": false,
+            "focus": false,
+            "zIndex": 3,
+            "width": 80,
+            "height": 80,
+            "hasResize": false,
+            "props": {
+                "size": 80,
+                "text": "软件学院",
+                "type": "primary",
+                "classes": "Organization"
+            }
+        },
+        {
+            "top": 255.5,
+            "left": 527,
+            "componentKey": "impnode",
+            "adjustPosition": false,
+            "focus": false,
+            "zIndex": 3,
+            "width": 80,
+            "height": 80,
+            "hasResize": false,
+            "props": {
+                "size": 80,
+                "text": "机器人学院",
+                "type": "primary",
+                "classes": "Organization"
+            }
+        },
+        {
+            "top": 81,
+            "left": 293,
+            "componentKey": "impnode",
+            "adjustPosition": false,
+            "focus": false,
+            "zIndex": 3,
+            "width": 80,
+            "height": 80,
+            "hasResize": false,
+            "props": {
+                "size": 80,
+                "text": "文法学院",
+                "type": "primary",
+                "classes": "Organization"
+            }
+        },
+        {
+            "top": 328.5,
+            "left": 259,
+            "componentKey": "node",
+            "adjustPosition": false,
+            "focus": false,
+            "zIndex": 4,
+            "width": 60,
+            "height": 60,
+            "hasResize": false,
+            "props": {
+                "size": 60,
+                "text": "同学...",
+                "type": "",
+                "classes": "Person",
+                "data": [
+                    {
+                        "key": "年龄",
+                        "value": "？岁"
+                    },
+                    {
+                        "key": "性别",
+                        "value": "？"
+                    },
+                    {
+                        "key": "学校",
+                        "value": "东北大学"
+                    },
+                    {
+                        "key": "学院",
+                        "value": "计算机科学与工程学院"
+                    },
+                    {
+                        "key": "住址",
+                        "value": "浑南校区？舍？？"
+                    },
+                    {
+                        "key": "家乡",
+                        "value": "？省？市"
+                    },
+                    {
+                        "key": "祖籍",
+                        "value": "？？省？？市"
+                    },
+                    {
+                        "key": "电话",
+                        "value": "？？？"
+                    },
+                    {
+                        "key": "QQ号",
+                        "value": "？？？"
+                    },
+                    {
+                        "key": "身份",
+                        "value": "？"
+                    },
+                    {
+                        "key": "入学年份",
+                        "value": "20？年"
+                    },
+                    {
+                        "key": "班级",
+                        "value": "？？？班"
+                    }
+                ]
+            }
+        },
+        {
+            "top": 161,
+            "left": 601,
+            "componentKey": "impnode",
+            "adjustPosition": false,
+            "focus": false,
+            "zIndex": 3,
+            "width": 80,
+            "height": 80,
+            "hasResize": false,
+            "props": {
+                "size": 80,
+                "text": "学院...",
+                "type": "primary",
+                "classes": "Organization"
+            }
+        }
+    ],
+	"arrows": [
+        {
+			"num_start": 1,
+			"num_end": 3,
+			"text": "关系"
+		},
+		{
+			"num_start": 1,
+			"num_end": 4,
+			"text": "关系"
+		},
+		{
+			"num_start": 1,
+			"num_end": 5,
+			"text": "关系"
+		},
+        {
+			"num_start": 1,
+			"num_end": 6,
+			"text": "关系"
+		},
+        {
+			"num_start": 1,
+			"num_end": 8,
+			"text": "关系"
+		},
+        {
+			"num_start": 3,
+			"num_end": 7,
+			"text": "关系"
+		},
+        {
+			"num_start": 3,
+			"num_end": 2,
+			"text": "关系"
+		},
+        {
+			"num_start": 3,
+			"num_end": 0,
+			"text": "关系"
+		}
+	]
+}

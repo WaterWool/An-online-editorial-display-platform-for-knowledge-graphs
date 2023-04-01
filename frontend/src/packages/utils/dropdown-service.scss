@@ -1,0 +1,54 @@
+$menuSize: 275px;
+$headSize: 50px;
+$operatorSize: 275px;
+$ibc: #dcdfe6; //边框的颜色
+$ibl: #ebeef5; //light边框颜色
+$itc: #314659; //字体颜色
+$icc: rgba(0, 0, 0, 0.45); //icon颜色
+$boxShadowColor: #7474742a;
+$primary: #175ceb; // 主色调
+
+.dropdown-service {
+    color: $primary;
+    position: fixed;
+    width: 200px;
+    padding: 5px 0;
+    z-index: 99;
+    box-shadow: 3px 3px 5px 1px $boxShadowColor;
+    background-color: #fff;
+    border: solid 1px #efefef;
+    border-radius: 7px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 150ms linear;
+
+    .dropdown-option {
+        padding: 5px 12px;
+        font-size: 14px;
+
+        & > i {
+            font-size: 16px;
+            margin-right: 12px;
+        }
+
+        & > span {
+            span {
+                position: absolute;
+                right: 15px;
+                padding-top: 0px;
+                color: #c5c5c5;
+                font-size: 12px;
+            }
+        }
+
+        &:hover {
+            background-color: #efefef;
+            cursor: pointer;
+        }
+    }
+
+    &.dropdown-service-show {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}

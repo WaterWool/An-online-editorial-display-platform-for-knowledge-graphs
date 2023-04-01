@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1648104794604') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon_fabu:before {
+  content: "\eb88";
+}
+
+.icon-xingzhuang-tupian:before {
+  content: "\eb98";
+}
+
+.icon-guizeyinqing:before {
+  content: "\ec53";
+}
+
+.icon-shebeikaifa:before {
+  content: "\ecac";
+}
+
+.icon-ashbin:before {
+  content: "\e744";
+}
+
+.icon-add:before {
+  content: "\e664";
+}
+
+.icon-back:before {
+  content: "\e666";
+}
+
+.icon-code:before {
+  content: "\e667";
+}
+
+.icon-close:before {
+  content: "\e668";
+}
+
+.icon-direction-right:before {
+  content: "\e66c";
+}
+
+.icon-direction-left:before {
+  content: "\e66d";
+}
+
+.icon-download:before {
+  content: "\e66e";
+}
+
+.icon-edit:before {
+  content: "\e66f";
+}
+
+.icon-error:before {
+  content: "\e670";
+}
+
+.icon-forward:before {
+  content: "\e671";
+}
+
+.icon-layers:before {
+  content: "\e675";
+}
+
+.icon-run-up:before {
+  content: "\e67b";
+}
+
+.icon-run-in:before {
+  content: "\e67c";
+}
+
+.icon-select:before {
+  content: "\e67e";
+}
+
+.icon-setting:before {
+  content: "\e67d";
+}
+
